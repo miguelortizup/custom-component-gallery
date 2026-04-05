@@ -7,7 +7,7 @@ A Retool Custom Component that renders a bell icon with an optional notification
 - 🔔 Bell icon rendered as an inline SVG (no extra dependencies)
 - 🔴 Red badge with white number appears when `notificationCount > 0`
 - ❌ Badge is hidden automatically when count is `0` or not provided
-- 🎨 Configurable icon color and size via component props
+- 🎨 Configurable icon color and max size via component props
 - 💯 Badge label caps at `99+` to avoid overflow
 
 ## Props
@@ -16,7 +16,7 @@ A Retool Custom Component that renders a bell icon with an optional notification
 |---|---|---|---|
 | `notificationCount` | number | `0` | Number shown in the badge. Badge hidden when `0`. |
 | `iconColor` | string | `"#333333"` | Stroke color of the icon. |
-| `iconSize` | number | `32` | Width and height of the icon in pixels. |
+| `maxSize` | number | `64` | Maximum icon size in pixels. The icon scales to fill the component container but never exceeds this value. |
 
 ## Installation
 
@@ -45,7 +45,7 @@ Leave `notificationCount` at `0` (the default) or do not bind it. The bell rende
 ### Custom size and color
 
 ```
-iconSize = 48
+maxSize = 48
 iconColor = "#1a73e8"
 notificationCount = 12
 ```
