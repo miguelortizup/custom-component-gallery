@@ -1,0 +1,7 @@
+{
+  "id": "notification-icon",
+  "title": "Notification Icon",
+  "author": "@MiguelOrtiz",
+  "shortDescription": "Displays a bell icon with an optional red badge showing an unread notification count. The badge appears only when notificationCount is greater than zero.",
+  "tags": ["UI Components", "React", "Custom"]
+}
